@@ -1,0 +1,57 @@
+body{
+  margin-top: 60px;
+}
+.jumbotron { 
+    background-color: #00688b; 
+    color: #ffffff;
+}
+.container-fluid {
+    padding: 30px 25px;
+}
+.bg-grey {
+    background-color: #000406;
+}
+h1{
+  font-family: 'Carter One', cursive;
+  
+}
+.fa-heartbeat{
+  margin-left: 15px;
+  color: #cd0000;
+  font-size:40px;
+}
+p,li{
+  font-family: 'Roboto', sans-serif;  
+}
+li{  
+  padding: 3px;
+}
+.slideanim {visibility:hidden;}
+.slide {
+    animation-name: slide;
+    -webkit-animation-name: slide; 
+    animation-duration: 1s; 
+    -webkit-animation-duration: 1s;
+    visibility: visible; 
+}
+
+@keyframes slide {
+    0% {
+        opacity: 0;
+        transform: translateY(70%);
+    } 
+    100% {
+        opacity: 1;
+        transform: translateY(0%);
+    } 
+}
+@-webkit-keyframes slide {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(70%);
+    } 
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(0%);
+    }
+}
