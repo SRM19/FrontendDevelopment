@@ -1,0 +1,189 @@
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+<h1 id="title">Customer Feedback Form</h1>
+<div id="form-outer">
+<p id="description">
+    Let us know your feedback
+  </p>
+  <form id="survey-form">
+    <div class="rowTab">
+      <div class="labels">
+        <label id="name-label" for="name">* Name: </label>
+      </div>
+      <div class="rightTab">
+        <input autofocus type="text" name="name" id="name" class="input-field" placeholder="Enter your name" required>
+      </div>
+    </div>
+    <div class="rowTab">
+      <div class="labels">
+        <label id="email-label" for="email">* Email: </label>
+      </div>
+      <div class="rightTab">
+        <input autofocus type="email" name="email" id="email" class="input-field" placeholder="Enter your email id" required>
+      </div>
+    </div>
+    <div class="rowTab">
+      <div class="labels">
+        <label for="ProductCat">Select the Product Category</label>
+      </div>
+      <div class="rightTab">
+        <select id="dropdown" name="ProductCat" class="dropdown">
+      <option disabled value>Select an option</option>
+      <option  value="commsoft">Communication Software</option>
+      <option value="dbinterface">Database Interface Software</option>
+      <option value="teamcollab">Team Collaboration Software</option>
+      <option value="utilitysoft">Utility Software</option>
+      <option value="others">Others</option>
+    </select>
+      </div>
+    </div>
+    <div class="rowTab">
+      <div class="labels">
+        <label id="number-label" for="purchase">* Purchased In: </label>
+      </div>
+      <div class="rightTab">
+        <input autofocus type="number" name="purchase" id="number" class="input-field" min="2000" max="2019" placeholder="Enter the year of purchase">
+      </div>
+    </div>
+    <div class="rowTab">
+      <div class="labels">
+        <label for="preferences">What do you like about the product?<br>(Check all that apply): </label>
+      </div>
+      <div class="rightTab">
+        <ul id="preferences" style="list-style: none;">
+          <li class="checkbox"><label><input name="prefer" value="customization" type="checkbox" class="userRatings">Customization</label></li>
+          <li class="checkbox"><input name="prefer" value="performance" type="checkbox" class="userRatings">Performance</li>
+          <li class="checkbox"><label><input name="prefer" value="pricing" type="checkbox" class="userRatings">Pricing</label></li>
+          <li class="checkbox"><label><input name="prefer" value="support" type="checkbox" class="userRatings">Support</label></li>
+        </ul>
+      </div>
+    </div>
+    <div class="rowTab">
+      <div class="labels">
+        <label for="userRating">* How satisfied are you with the product?</label>
+      </div>
+      <div class="rightTab">
+        <ul style="list-style: none;">
+          <li class="radio"><label><input name="radio-buttons" value="1"  type="radio" class="userRatings" >Highly Satisfied</label></li>
+          <li class="radio"><label><input name="radio-buttons" value="2"  type="radio" class="userRatings" >Satisfied</label></li>
+          <li class="radio"><label><input name="radio-buttons" value="3"  type="radio" class="userRatings" >Not Satisfied</label></li>
+        </ul>
+      </div>
+    </div>
+    <div class="rowTab">
+      <div class="labels">
+        <label for="userComment">User Comments</label>
+      </div>
+      <div class="rightTab">
+        <textarea id="userComment" class="input-field" name="userComment" placeholder="Enter your comment here..."></textarea>
+      </div>
+    </div>
+    <button id="submit" type="submit">Submit</button>
+  </form>
+</div>
+<style>
+  @import url(https://fonts.googleapis.com/css?family=Raleway:400,500);
+
+html,
+body {
+  background-color: #7FE5FF;
+  text-align: center;
+  font-family: 'Raleway', Helvetica, sans-serif;
+  min-width: 320px;
+}
+
+header {
+  font-size: 2em;
+  font-weight: bold;
+  margin: 20px;
+}
+
+#form-outer {
+  background-color: #eef0f1;
+  margin: auto;
+  border-radius: 6px;
+  max-width: 900px;
+  padding: 10px;
+}
+
+
+#submit {
+  background-color: #59ace0;
+  border-radius: 4px;
+  color: white;
+  font-size: 1em;
+  height: 40px;
+  width: 96px;
+  margin: 10px;
+  border: 0px solid;
+}
+.labels{
+  display:inline-block;
+  padding:5px;
+  text-align:right;
+  width:40%;
+  margin-top:10px;
+  vertical-align:top;
+}
+.rightTab{
+  display:inline-block;
+  padding:5px;
+  text-align:left;
+  width:45%;
+  vertical-align:middle;
+}
+.input-field{
+  padding:5px;
+  margin:5px;
+  border:1px solid #c0c0c0;
+  border-radius:3px;
+  width:300px;
+}
+#dropdown{
+  width:310px;
+  padding:5px;
+  margin:5px;
+  border:1px solid #c0c0c0;
+  border-radius:3px;
+}
+.checkbox,.radio{
+ margin-bottom:10px;
+ position:relative;
+ left:-40px;
+}
+
+#submit{
+  position:relative;
+  right:-250px;
+}
+@media screen and (max-width:900px){
+  .input-field{
+    width:80%;
+  }
+  #dropdown{
+    width:90%;
+  }
+  #submit{
+    right:-170px;
+  }
+}
+
+@media screen and (max-width:550px){
+  .labels{
+    width:100%;
+    text-align:left;
+  }
+  .input-field,#dropdown{
+    width:100%;
+  }
+  .rightTab {
+    width:80%;
+    float:left;
+  }
+  #submit{
+    right:0px;
+  }
+  
+}
+
+</style>
+
