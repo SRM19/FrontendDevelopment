@@ -1,0 +1,141 @@
+<nav id="navbar">
+  <header>Angular CLI Documentation</header>
+  <ul>
+    <li><a href="#Overview" class="nav-link">Overview</a></li>
+    <li><a href="#ng_add" class="nav-link">ng add</a></li>
+    <li><a href="#ng_build" class="nav-link">ng build</a></li>
+    <li><a href="#ng_config" class="nav-link">ng config</a></li>
+    <li><a href="#ng_deploy" class="nav-link">ng deploy</a></li>
+    <li><a href="#ng_doc" class="nav-link">ng doc</a></li>
+    <li><a href="#ng_generate" class="nav-link">ng generate</a></li>
+    <li><a href="#ng_help" class="nav-link">ng help</a></li>
+    <li><a href="#ng_lint" class="nav-link">ng lint</a></li>
+    <li><a href="#ng_new" class="nav-link">ng new</a></li>
+    <li><a href="#ng_run" class="nav-link">ng run</a></li>
+    <li><a href="#ng_serve" class="nav-link">ng serve</a></li>
+    <li><a href="#ng_test" class="nav-link">ng test</a></li>
+    <li><a href="#ng_update" class="nav-link">ng update</a></li>
+  </ul>
+</nav>
+<main id="main-doc">
+  <section id="Overview" class="main-section">
+    <header>Overview</header>
+    <article>
+    <p>The Angular CLI is a command-line interface tool that you use to initialize, develop, scaffold, and maintain Angular applications. You can use the tool directly in a command shell, or indirectly through an interactive UI such as Angular Console.</p>
+    <p>Major versions of Angular CLI follow the supported major version of Angular, but minor versions can be released separately.
+
+Install the CLI using the npm package manager:</p>
+    <code>npm install -g @angular/cli</code>
+      <article>
+  </section>
+  <section id="ng_add" class="main-section">
+    <header>ng add</header>
+    <article>
+    <p>Adds the npm package for a published library to your workspace, and configures the project in the current working directory (or the default project if you are not in a project directory) to use that library, as specified by the library's schematic. For example, adding @angular/pwa configures your project for PWA support:</p>
+    <code>ng add @angular/pwa</code>
+    <p>The default project is the value of defaultProject in angular.json.</p>  
+ </article>
+  </section>
+  <section id="ng_build" class="main-section">
+    <header>ng build</header>
+    <article>
+    <p>Compiles an Angular app into an output directory named dist/ at the given output path. Must be executed from within a workspace directory.</p>
+    <p>The command can be used to build a project of type "application" or "library". When used to build a library, a different builder is invoked, and only the ts-config, configuration, and watch options are applied. All other options apply only to building applications.
+
+The application builder uses the webpack build tool, with default configuration options specified in the workspace configuration file (angular.json) or with a named alternative configuration. A "production" configuration is created by default when you use the CLI to create the project, and you can use that configuration by specifying the --configuration="production" or the --prod="true" option.</p>
+    <code>ng build [project_name] [options]</code>
+      </article>
+  </section>
+  <section id="ng_config" class="main-section">
+    <header>ng config</header>
+    <article>
+    <p>Retrieves or sets Angular configuration values in the angular.json file for the workspace.</p>
+    <code>ng config [jsonPath] [value] [options]</code>
+     <p>The configuration key to set or query, in JSON path format. For example: "a[3].foo.bar[2]". If no new value is provided, returns the current value of this key.</p>
+      </article>
+  </section>
+  <section id="ng_deploy" class="main-section">
+    <header>ng deploy</header>
+    <article>
+    <p>Invokes the deploy builder for a specified project or for the default project in the workspace.</p>
+    <p>The command takes an optional project name, as specified in the projects section of the angular.json workspace configuration file. When a project name is not supplied, executes the deploy builder for the default project.</p>
+    <code>ng deploy [project] [options]</code>
+      </article>
+  </section>
+  <section id="ng_doc" class="main-section">
+    <header>ng doc</header>
+    <article>
+    <p>Opens the official Angular documentation (angular.io) in a browser, and searches for a given keyword.</p>
+    <code>ng doc [keyword] [options]</code>
+    <p>The keyword to search for, as provided in the search bar in angular.io.</p>    
+  </section>
+  <section id="ng_generate" class="main-section">
+    <header>ng generate</header>
+      <article>
+    <p>Generates and/or modifies files based on a schematic.</p>
+    <code>ng generate [schematic] [options]</code>
+    <p>The schematic or collection:schematic to generate.This option can take one of the following sub-commands:</p>
+      <li>appShell</li>
+    <li>application</li>
+    <li>class</li>
+    <li>component</li>
+    <li>directive</li>
+      </article>
+  </section> 
+  <section id="ng_help" class="main-section">
+    <header>ng help</header>
+    <article>
+    <p>Lists available commands and their short descriptions.</p>
+    <code>ng help [options]</code>
+    <p>For help with individual commands, use the --help or -h option with the command.</p>   
+      </article>
+  </section>
+  <section id="ng_lint" class="main-section">
+    <header>ng lint</header>
+    <article>
+    <p>Runs linting tools on Angular app code in a given project folder.</p>
+    <code>ng lint [project] [options]</code>
+    <p>Takes the name of the project, as specified in the projects section of the angular.json workspace configuration file. When a project name is not supplied, it will execute for all projects.</p>
+      </article></section>
+  <section id="ng_new" class="main-section">
+    <header>ng new</header>
+    <article>
+    <p>Creates a new workspace and an initial Angular app.</p>
+    <code>ng new [name] [options]</code>
+    <p>Creates and initializes a new Angular app that is the default project for a new workspace.</p>
+      </article></section>
+  <section id="ng_run" class="main-section">
+    <header>ng run</header>
+    <article>
+    <p>Runs an Architect target with an optional custom builder configuration defined in your project.</p>
+    <code>ng run [target] [options]</code>
+    <p>Architect is the tool that the CLI uses to perform complex tasks such as compilation, according to provided configurations. The CLI commands run Architect targets such as build, serve, test, and lint. Each named target has a default configuration, specified by an "options" object, and an optional set of named alternate configurations in the "configurations" object.</p>
+      </article>
+  </section>
+  <section id="ng_serve" class="main-section">
+    <header>ng serve</header>
+    <article>
+    <p>Builds and serves your app, rebuilding on file changes.</p>
+    <code>ng serve [project] [options]</code>
+    <p>The name of the project to build. Can be an application or a library.</p>    
+  </section>
+  <section id="ng_test" class="main-section">
+    <header>ng test</header>
+    <article><p>Runs unit tests in a project.</p>
+    <code>ng test [project] [options]</code>
+    <p>Takes the name of the project, as specified in the projects section of the angular.json workspace configuration file. When a project name is not supplied, it will execute for all projects.</p>
+    </article></section>
+  <section id="ng_update" class="main-section">
+    <header>ng update</header>
+    <article><p>Updates your application and its dependencies.</p>
+    <code>ng update [options]</code>
+    <p>To update to the next beta or pre-release version, use the --next=true option.
+
+To update from one major version to another, use the format ng update @angular/cli@^[major_version] @angular/core@^[major_version].
+
+We recommend that you always update to the latest patch version, as it contains fixes we released since the initial major release. For example, use the following command to take the latest 7.x.x version and use that to update.
+
+ng update @angular/cli@^7 @angular/core@^7</p>    
+  </article>
+    </section>
+</main>

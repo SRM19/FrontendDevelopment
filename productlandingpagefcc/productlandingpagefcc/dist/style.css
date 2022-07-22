@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css?family=Satisfy&display=swap');
+body{
+  background-color: #679267;
+  font-family: 'Satisfy' , sans-serif;
+  color:#f9f4f4;
+}
+header{
+ position: fixed;
+  top: 0;
+  width:100%;
+  min-height: 110px;
+  padding: 0px 25px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #003153;
+}
+header img{
+  max-width: 58px;
+  position:fixed;
+  top:5px;
+}
+nav > ul {
+  padding:0px;
+  margin:0px;
+  width: 45vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.logo{
+  position:fixed;
+  color:#f9f4f4;
+  font-family: 'Satisfy' , sans-serif;
+  font-size:40px;
+  top:50px;
+  left:35px;
+}
+
+a {
+  color: #f9f4f4;
+  text-decoration: none;
+  font-size:35px;
+}
+li {
+  list-style: none;
+}
+#subscribe{
+  display:flex;
+  flex-direction:column;
+  height:200px;
+  margin-top:80px;
+  align-items:center;
+  justify-content:center;
+  text-align: center;
+}
+
+#subscribe > h2 {
+  margin-bottom: 20px;
+  word-wrap: break-word;
+}
+#email{
+  max-width: 275px;
+  width: 100%;
+  padding: 5px;
+}
+#submit{
+  max-width:120px;
+  width:100%;
+  margin-top:10px;
+  height: 30px;
+  border:0;
+  background-color: #e1d1f2;
+}
+#submit:hover {
+  background-color: #c7a9e7;
+  transition: background-color 0.5s;
+}
+
+
+.btn {
+  padding: 0 10px; 
+  font-size: 1em;
+  font-weight: bold;
+  border: 3px black solid;
+  border-radius: 2px;
+  text-transform: uppercase;
+  background: transparent;
+  cursor: pointer;
+}
+
+#gallery{
+  display:flex;
+  justify-content:center;
+  margin: 40px;
+}
+
+#gallery > iframe{
+  width:100%;
+  max-width: 540px;
+  height:350px;
+}
+
+#stores{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.store-add{
+  margin:40px;
+  border: 1px solid #f9f4f4;
+  border-radius:4px;
+  font-size:20px;
+  align-items: center;
+  text-align: center;;
+}
+
+.store-add > .location{
+  background-color: #0e003a;
+  color:#e1d1f2;
+  text-transform:uppercase;
+  border-radius:4px;
+}
+@media(max-width:650px){
+  
+}
